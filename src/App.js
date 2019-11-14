@@ -7,8 +7,10 @@ import ReduxContainer from './Redux/ReduxContainer';
 function App() {
   return (
     <div>
+      <UDContainer />
+      <UDHContainer />
+      <APIContainer />
       <ReduxContainer />
-      
     </div>
   );
 }
