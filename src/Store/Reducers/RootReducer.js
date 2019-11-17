@@ -1,6 +1,6 @@
 import * as ACTION_TYPES from '../Actions/ActionTypes';
 
-const initialState = {
+export const initialState = {
   state1: false,
   counter: 0,
   userInput: ''

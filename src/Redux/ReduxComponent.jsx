@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as ACTIONS from './Store/Actions/Actions';
+import * as ACTIONS from '../Store/Actions/Actions';
 
 const ReduxComponent = props => {
   return (
@@ -26,8 +26,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     inputAction: text => dispatch(ACTIONS.userInput(text)),
-    increaseAction: () => dispatch(ACTIONS.INCREASE),
-    negateAction: () => dispatch(ACTIONS.NEGATE)
+    increaseAction: () => dispatch(ACTIONS.increase),
+    negateAction: () => dispatch(ACTIONS.negate)
   };
 };
 

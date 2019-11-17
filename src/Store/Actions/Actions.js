@@ -1,10 +1,10 @@
 import * as ACTION_TYPES from './ActionTypes';
 
-export const INCREASE = {
+export const increase = {
   type: ACTION_TYPES.INCREASE
 };
 
-export const NEGATE = {
+export const negate = {
   type: ACTION_TYPES.NEGATE
 };
 

@@ -15,7 +15,7 @@ class UDContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{paddingTop: 20}}>
         <h3>Unidirectional Container</h3>
         <UDComponent
           value={this.state.value}
