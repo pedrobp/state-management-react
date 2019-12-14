@@ -1,23 +1,27 @@
 import React from 'react';
+import Button from '../Util/Button';
+import Input from '../Util/Input';
 import { connect } from 'react-redux';
 import * as ACTIONS from '../Store/Actions/Actions';
 
-const ReduxComponent = props => {
+const ReduxComponent = (props) => {
   return (
-    <div>
-      <div>State Example 1: {props.fromState1.toString()}</div>
-      <button onClick={() => props.negateAction()}>Negate State</button>
+    <>
+      <div>State Example 1: {props.fromStateBoolean.toString()}</div>
+      <Button onClick={() => props.negateAction()} label="Negate State" />
+
       <div>Counter State: {props.fromStateCounter}</div>
-      <button onClick={() => props.increaseAction()}>Increase Counter</button>
+      <Button onClick={() => props.increaseAction()} label="Increase Counter" />
+
       <div>User Input State: {props.fromStateInput}</div>
-      <input onChange={event => props.inputAction(event.target.value)}></input>
-    </div>
+      <Input onChange={event => props.inputAction(event.target.value)} />
+    </>
   );
 };
 
 const mapStateToProps = state => {
   return {
-    fromState1: state.state1,
+    fromStateBoolean: state.boolean,
     fromStateInput: state.userInput,
     fromStateCounter: state.counter
   };

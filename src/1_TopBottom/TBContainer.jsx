@@ -1,12 +1,10 @@
 import React from 'react';
-import UDComponent from './UDComponent';
+import UDComponent from './TBComponent';
 
 class UDContainer extends React.Component {
   constructor() {
     super();
-    this.state = {
-      value: 20
-    };
+    this.state = { value: 20 };
   }
 
   handleChangeState = () => {
@@ -15,13 +13,13 @@ class UDContainer extends React.Component {
 
   render() {
     return (
-      <div style={{paddingTop: 20}}>
+      <>
         <h3>Unidirectional Container</h3>
         <UDComponent
           value={this.state.value}
           changeState={this.handleChangeState}
         />
-      </div>
+      </>
     );
   }
 }

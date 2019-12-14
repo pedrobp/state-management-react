@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import APIComponent from './APIComponent';
 import ContextExample from './APIContext';
+import APIComponent from './APIComponent';
 import APIClassComponent from './APIClassComponent';
 
 const APIContainer = () => {
@@ -16,7 +16,7 @@ const APIContainer = () => {
   };
 
   return (
-    <div style={{paddingTop: 20}}>
+    <>
       <ContextExample.Provider
         value={{
           textExample,
@@ -28,8 +28,9 @@ const APIContainer = () => {
         <h3>API Context: Integrated Provider and State Example</h3>
         <APIComponent />
       </ContextExample.Provider>
+
       <APIClassComponent />
-    </div>
+    </>
   );
 };
 
