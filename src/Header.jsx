@@ -16,7 +16,7 @@ const Header = () => {
       <Link to="/Redux" style={{ paddingRight: 20 }}>
         Redux Example
       </Link>
-      <Link to="/UseReducer" style={{ paddingRight: 20 }}>
+      <Link to="/UseReducer" >
         UseReducer Example
       </Link>
     </div>
