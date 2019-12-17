@@ -4,7 +4,7 @@ import ContextExample from './APIContext';
 class APIClassComponent extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <h3>API Context: No Provider Example</h3>
         
         <ContextExample.Consumer>
@@ -15,7 +15,7 @@ class APIClassComponent extends React.Component {
             </>
           )}
         </ContextExample.Consumer>
-      </div>
+      </>
     );
   }
 }

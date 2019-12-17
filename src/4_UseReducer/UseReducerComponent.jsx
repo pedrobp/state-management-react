@@ -8,7 +8,7 @@ const UseReducerComponent = () => {
   const [state, dispatch] = useReducer(rootReducer, initialState);
 
   return (
-    <div>
+    <>
       <div>State Example 1: {state.boolean.toString()}</div>
       <Button onClick={() => dispatch({ type: ACTION_TYPES.NEGATE })} label="Negate State" />
 
@@ -17,7 +17,7 @@ const UseReducerComponent = () => {
 
       <div>User Input State: {state.userInput}</div>
       <Input onChange={event => dispatch({ type: ACTION_TYPES.USER_INPUT, payload: event.target.value })} />
-    </div>
+    </>
   );
 };
 

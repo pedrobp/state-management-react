@@ -4,7 +4,7 @@ import Input from '../Util/Input';
 import { connect } from 'react-redux';
 import * as ACTIONS from '../Store/Actions/Actions';
 
-const ReduxComponent = (props) => {
+const ReduxComponent = props => {
   return (
     <>
       <div>State Example 1: {props.fromStateBoolean.toString()}</div>
