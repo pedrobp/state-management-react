@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div>
-      <Link to="/Unidirectional" style={{ paddingRight: 20 }}>
-        Unidirectional Example
+    <>
+      <Link to="/TopBottom" style={{ paddingRight: 20 }}>
+        Top-Bottom Example
       </Link>
-      <Link to="/UnidirectionalHooks" style={{ paddingRight: 20 }}>
-        Unidirectional Hooks Example
+      <Link to="/TopBottomHooks" style={{ paddingRight: 20 }}>
+        Top-Bottom Hooks Example
       </Link>
       <Link to="/API" style={{ paddingRight: 20 }}>
-        API Context Example
+        Context API Example
       </Link>
       <Link to="/Redux" style={{ paddingRight: 20 }}>
         Redux Example
@@ -19,7 +19,7 @@ const Header = () => {
       <Link to="/UseReducer" >
         UseReducer Example
       </Link>
-    </div>
+    </>
   );
 };
 

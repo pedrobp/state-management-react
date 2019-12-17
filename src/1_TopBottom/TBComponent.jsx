@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Util/Button';
 
-class UDComponent extends React.Component {
+class TBComponent extends React.Component {
 
   constructor(props) {
     super(props);
@@ -27,4 +27,4 @@ class UDComponent extends React.Component {
   }
 }
 
-export default UDComponent;
+export default TBComponent;

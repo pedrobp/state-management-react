@@ -1,7 +1,7 @@
 import React from 'react';
-import UDComponent from './TBComponent';
+import TBComponent from './TBComponent';
 
-class UDContainer extends React.Component {
+class TBContainer extends React.Component {
   constructor() {
     super();
     this.state = { value: 20 };
@@ -14,8 +14,8 @@ class UDContainer extends React.Component {
   render() {
     return (
       <>
-        <h3>Unidirectional Container</h3>
-        <UDComponent
+        <h3>Top-Bottom Example Container</h3>
+        <TBComponent
           value={this.state.value}
           changeState={this.handleChangeState}
         />
@@ -24,4 +24,4 @@ class UDContainer extends React.Component {
   }
 }
 
-export default UDContainer;
+export default TBContainer;

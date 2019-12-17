@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import UDHComponent from './TBHooksComponent';
+import TBHComponent from './TBHooksComponent';
 
-const UDHContainer = () => {
+const TBHContainer = () => {
   const [value, setValue] = useState(10);
 
   const handleChange = () => {
@@ -10,10 +10,10 @@ const UDHContainer = () => {
 
   return (
     <>
-      <h3>Unidirectional Functional Container</h3>
-      <UDHComponent value={value} changeState={handleChange} />
+      <h3>Top-Bottom Functional Container</h3>
+      <TBHComponent value={value} changeState={handleChange} />
     </>
   );
 };
 
-export default UDHContainer;
+export default TBHContainer;
