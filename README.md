@@ -8,4 +8,4 @@ Run with `npm start`.
 
 Have fun playing with states!
 
-Follow the PDF for more information.
+Follow the PDF in *docs* folder for more information.
